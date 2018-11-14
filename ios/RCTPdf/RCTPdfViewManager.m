@@ -24,7 +24,7 @@ RCT_EXPORT_MODULE()
     } else {
         return NULL;
     }
-  
+
 }
 
 RCT_EXPORT_VIEW_PROPERTY(path, NSString);
@@ -37,6 +37,7 @@ RCT_EXPORT_VIEW_PROPERTY(enablePaging, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(enableRTL, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(enableAnnotationRendering, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(fitPolicy, int);
+RCT_EXPORT_VIEW_PROPERTY(displayMode, int);
 RCT_EXPORT_VIEW_PROPERTY(spacing, int);
 RCT_EXPORT_VIEW_PROPERTY(password, NSString);
 RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock);
@@ -49,7 +50,7 @@ RCT_EXPORT_METHOD(supportPDFKit:(RCTResponseSenderBlock)callback)
     } else {
         callback(@[@NO]);
     }
-    
+
 }
 
 + (BOOL)requiresMainQueueSetup {
